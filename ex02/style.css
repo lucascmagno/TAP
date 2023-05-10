@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body{
+    background-color: rgba(230, 202, 255, 0.123);
+}
+table{
+    border-collapse: collapse;
+}
+
+tr, td, th{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+input.quant{
+    width: 60px;
+}
+
+hr{
+    color: red;
+}
+
+#result{
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid red;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#comanda_cliente{
+    
+}
+
+h2, h3{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(82, 82, 224);
+    color: #fff;
+}
+button:hover{
+    cursor: pointer;
+    color: rgb(82, 82, 224);
+    background-color: #ddd;
+}
