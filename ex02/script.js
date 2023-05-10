@@ -33,5 +33,7 @@ function calcularTotal(){
 }
 
 function limparComanda(){
-
+    document.querySelector('input').value = '0';
+    document.getElementById('quant2').value = '0';
+    
 }
