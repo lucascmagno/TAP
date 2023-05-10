@@ -10,184 +10,182 @@
 </head>
 <body>
     <div id="container">
-        <form>
-            <h2>Comanda do Cliente: </h2>
-            <div id="comanda_cliente">
-                <table>
-                    <thead>
-                        <th>#</th>
-                        <th>Descrição</th>
-                        <th>Qtd.</th>
-                        <th>Preço</th>
-                        <th>Subtotal</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <select name="comida">
-                                    <option value="-">-</option>
-                                    <optgroup label="Salgados">
-                                        <option value="Cachorro quente">Cachorro quente</option>
-                                        <option value="X-Tudo">X-tudo</option>
-                                        <option value="Pizza G">Pizza G.</option>
-                                        <option value="Coxinha P">Coxinha P.</option>
-                                        <option value="Lanchao">Lanchão</option>
-                                        <option value="Mini pizza">Mini Pizza</option>
-                                    </optgroup>
-                                    <optgroup label="Bebidas">
-                                        <option value="Refrigerante">Refrigerante</option>
-                                        <option value="Suco de uva">Suco de uva</option>
-                                        <option value="Suco de Laranja">Suco de Laranja</option>
-                                        <option value="Guarana">Guaraná</option>
-                                    </optgroup>
-                                </select>
-                            </td>
-                            <td>
-                                <input class="quant" type="number" min="0" value="0" name="quant" id="quant1" onblur="subtotal()">
-                            </td>
-                            <td>
-                                <input type="number" step="0.01" min="0" value="0" name="preco" id="preco1">
-                            </td>
-                            <td>
-                                <input type="number" min="0" value="0" name="subtotal" id="subtotal1" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                <select name="comida">
-                                    <option value="-">-</option>
-                                    <optgroup label="Salgados">
-                                        <option value="Cachorro quente">Cachorro quente</option>
-                                        <option value="X-Tudo">X-tudo</option>
-                                        <option value="Pizza G">Pizza G.</option>
-                                        <option value="Coxinha P">Coxinha P.</option>
-                                        <option value="Lanchao">Lanchão</option>
-                                        <option value="Mini pizza">Mini Pizza</option>
-                                    </optgroup>
-                                    <optgroup label="Bebidas">
-                                        <option value="Refrigerante">Refrigerante</option>
-                                        <option value="Suco de uva">Suco de uva</option>
-                                        <option value="Suco de Laranja">Suco de Laranja</option>
-                                        <option value="Guarana">Guaraná</option>
-                                    </optgroup>
-                                </select>
-                            </td>
-                            <td>
-                                <input class="quant" type="number" min="0" value="0"  name="quant" id="quant2">
-                            </td>
-                            <td>
-                                <input type="number" step="0.01" min="0" value="0"  name="preco" id="preco2">
-                            </td>
-                            <td>
-                                <input type="number" id="subtotal2" min="0" value="0"  name="subtotal" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <select name="comida">
-                                    <option value="-">-</option>
-                                    <optgroup label="Salgados">
-                                        <option value="Cachorro quente">Cachorro quente</option>
-                                        <option value="X-Tudo">X-tudo</option>
-                                        <option value="Pizza G">Pizza G.</option>
-                                        <option value="Coxinha P">Coxinha P.</option>
-                                        <option value="Lanchao">Lanchão</option>
-                                        <option value="Mini pizza">Mini Pizza</option>
-                                    </optgroup>
-                                    <optgroup label="Bebidas">
-                                        <option value="Refrigerante">Refrigerante</option>
-                                        <option value="Suco de uva">Suco de uva</option>
-                                        <option value="Suco de Laranja">Suco de Laranja</option>
-                                        <option value="Guarana">Guaraná</option>
-                                    </optgroup>
-                                </select>
-                            </td>
-                            <td>
-                                <input class="quant" type="number" min="0" value="0" name="quant" id="quant3">
-                            </td>
-                            <td>
-                                <input type="number" step="0.01" min="0" value="0" name="preco" id="preco3">
-                            </td>
-                            <td>
-                                <input type="number" id="subtotal3" min="0" value="0" name="subtotal" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                <select name="comida">
-                                    <option value="-">-</option>
-                                    <optgroup label="Salgados">
-                                        <option value="Cachorro quente">Cachorro quente</option>
-                                        <option value="X-Tudo">X-tudo</option>
-                                        <option value="Pizza G">Pizza G.</option>
-                                        <option value="Coxinha P">Coxinha P.</option>
-                                        <option value="Lanchao">Lanchão</option>
-                                        <option value="Mini pizza">Mini Pizza</option>
-                                    </optgroup>
-                                    <optgroup label="Bebidas">
-                                        <option value="Refrigerante">Refrigerante</option>
-                                        <option value="Suco de uva">Suco de uva</option>
-                                        <option value="Suco de Laranja">Suco de Laranja</option>
-                                        <option value="Guarana">Guaraná</option>
-                                    </optgroup>
-                                </select>
-                            </td>
-                            <td>
-                                <input class="quant" type="number" min="0" value="0" name="quant" id="quant4">
-                            </td>
-                            <td>
-                                <input type="number" step="0.01" min="0" value="0" name="preco" id="preco4">
-                            </td>
-                            <td>
-                                <input type="number" id="subtotal4" min="0" value="0" name="subtotal" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>
-                                <select name="comida">
-                                    <option value="-">-</option>
-                                    <optgroup label="Salgados">
-                                        <option value="Cachorro quente">Cachorro quente</option>
-                                        <option value="X-Tudo">X-tudo</option>
-                                        <option value="Pizza G">Pizza G.</option>
-                                        <option value="Coxinha P">Coxinha P.</option>
-                                        <option value="Lanchao">Lanchão</option>
-                                        <option value="Mini pizza">Mini Pizza</option>
-                                    </optgroup>
-                                    <optgroup label="Bebidas">
-                                        <option value="Refrigerante">Refrigerante</option>
-                                        <option value="Suco de uva">Suco de uva</option>
-                                        <option value="Suco de Laranja">Suco de Laranja</option>
-                                        <option value="Guarana">Guaraná</option>
-                                    </optgroup>
-                                </select>
-                            </td>
-                            <td>
-                                <input class="quant" type="number" min="0" value="0" name="quant" id="quant5">
-                            </td>
-                            <td>
-                                <input type="number" step="0.01" min="0" value="0" name="preco" id="preco5">
-                            </td>
-                            <td>
-                                <input type="number" id="subtotal5" min="0" value="0" name="subtotal" disabled>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="result">
-                <h3>Total R$ <b id="total">00,00</b></h3>
-            </div>
-            <div class="buttons">
-                <button onclick="calcularTotal()">calcular Total</button>
-                <input class="limpar" type="reset" value="Limpar Comanda">
-            </div>
-        </form>
+        <h2>Comanda do Cliente: </h2>
+        <div id="comanda_cliente">
+            <table>
+                <thead>
+                    <th>#</th>
+                    <th>Descrição</th>
+                    <th>Qtd.</th>
+                    <th>Preço</th>
+                    <th>Subtotal</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <select name="comida">
+                                <option value="-">-</option>
+                                <optgroup label="Salgados">
+                                    <option value="Cachorro quente">Cachorro quente</option>
+                                    <option value="X-Tudo">X-tudo</option>
+                                    <option value="Pizza G">Pizza G.</option>
+                                    <option value="Coxinha P">Coxinha P.</option>
+                                    <option value="Lanchao">Lanchão</option>
+                                    <option value="Mini pizza">Mini Pizza</option>
+                                </optgroup>
+                                <optgroup label="Bebidas">
+                                    <option value="Refrigerante">Refrigerante</option>
+                                    <option value="Suco de uva">Suco de uva</option>
+                                    <option value="Suco de Laranja">Suco de Laranja</option>
+                                    <option value="Guarana">Guaraná</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="quant" type="number" min="0" value="0" name="quant" id="quant1" onblur="subtotal()">
+                        </td>
+                        <td>
+                            <input type="number" step="0.01" min="0" value="0" name="preco" id="preco1">
+                        </td>
+                        <td>
+                            <input type="number" min="0" value="0" name="subtotal" id="subtotal1" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <select name="comida">
+                                <option value="-">-</option>
+                                <optgroup label="Salgados">
+                                    <option value="Cachorro quente">Cachorro quente</option>
+                                    <option value="X-Tudo">X-tudo</option>
+                                    <option value="Pizza G">Pizza G.</option>
+                                    <option value="Coxinha P">Coxinha P.</option>
+                                    <option value="Lanchao">Lanchão</option>
+                                    <option value="Mini pizza">Mini Pizza</option>
+                                </optgroup>
+                                <optgroup label="Bebidas">
+                                    <option value="Refrigerante">Refrigerante</option>
+                                    <option value="Suco de uva">Suco de uva</option>
+                                    <option value="Suco de Laranja">Suco de Laranja</option>
+                                    <option value="Guarana">Guaraná</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="quant" type="number" min="0" value="0"  name="quant" id="quant2">
+                        </td>
+                        <td>
+                            <input type="number" step="0.01" min="0" value="0"  name="preco" id="preco2">
+                        </td>
+                        <td>
+                            <input type="number" id="subtotal2" min="0" value="0"  name="subtotal" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <select name="comida">
+                                <option value="-">-</option>
+                                <optgroup label="Salgados">
+                                    <option value="Cachorro quente">Cachorro quente</option>
+                                    <option value="X-Tudo">X-tudo</option>
+                                    <option value="Pizza G">Pizza G.</option>
+                                    <option value="Coxinha P">Coxinha P.</option>
+                                    <option value="Lanchao">Lanchão</option>
+                                    <option value="Mini pizza">Mini Pizza</option>
+                                </optgroup>
+                                <optgroup label="Bebidas">
+                                    <option value="Refrigerante">Refrigerante</option>
+                                    <option value="Suco de uva">Suco de uva</option>
+                                    <option value="Suco de Laranja">Suco de Laranja</option>
+                                    <option value="Guarana">Guaraná</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="quant" type="number" min="0" value="0" name="quant" id="quant3">
+                        </td>
+                        <td>
+                            <input type="number" step="0.01" min="0" value="0" name="preco" id="preco3">
+                        </td>
+                        <td>
+                            <input type="number" id="subtotal3" min="0" value="0" name="subtotal" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <select name="comida">
+                                <option value="-">-</option>
+                                <optgroup label="Salgados">
+                                    <option value="Cachorro quente">Cachorro quente</option>
+                                    <option value="X-Tudo">X-tudo</option>
+                                    <option value="Pizza G">Pizza G.</option>
+                                    <option value="Coxinha P">Coxinha P.</option>
+                                    <option value="Lanchao">Lanchão</option>
+                                    <option value="Mini pizza">Mini Pizza</option>
+                                </optgroup>
+                                <optgroup label="Bebidas">
+                                    <option value="Refrigerante">Refrigerante</option>
+                                    <option value="Suco de uva">Suco de uva</option>
+                                    <option value="Suco de Laranja">Suco de Laranja</option>
+                                    <option value="Guarana">Guaraná</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="quant" type="number" min="0" value="0" name="quant" id="quant4">
+                        </td>
+                        <td>
+                            <input type="number" step="0.01" min="0" value="0" name="preco" id="preco4">
+                        </td>
+                        <td>
+                            <input type="number" id="subtotal4" min="0" value="0" name="subtotal" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <select name="comida">
+                                <option value="-">-</option>
+                                <optgroup label="Salgados">
+                                    <option value="Cachorro quente">Cachorro quente</option>
+                                    <option value="X-Tudo">X-tudo</option>
+                                    <option value="Pizza G">Pizza G.</option>
+                                    <option value="Coxinha P">Coxinha P.</option>
+                                    <option value="Lanchao">Lanchão</option>
+                                    <option value="Mini pizza">Mini Pizza</option>
+                                </optgroup>
+                                <optgroup label="Bebidas">
+                                    <option value="Refrigerante">Refrigerante</option>
+                                    <option value="Suco de uva">Suco de uva</option>
+                                    <option value="Suco de Laranja">Suco de Laranja</option>
+                                    <option value="Guarana">Guaraná</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="quant" type="number" min="0" value="0" name="quant" id="quant5">
+                        </td>
+                        <td>
+                            <input type="number" step="0.01" min="0" value="0" name="preco" id="preco5">
+                        </td>
+                        <td>
+                            <input type="number" id="subtotal5" min="0" value="0" name="subtotal" disabled>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="result">
+            <h3>Total R$ <b id="total">00,00</b></h3>
+        </div>
+        <div class="buttons">
+            <button onclick="calcularTotal()">calcular Total</button>
+            <button onclick="limparComanda()">Limpar Comanda</button>
+        </div>
     </div>
 </body>
 </html>

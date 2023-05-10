@@ -1,5 +1,10 @@
-function subtotal(){
+function subtotal1(){
+    var quant1 = parseFloat(document.getElementById("quant1").value)
+    var preco1 = parseFloat(document.getElementById("preco1").value)
+    var result = document.getElementById("subtotal1");
+    var total1 = quant1 * preco1;
 
+    result.innerHTML= total1;
 }
 
 function calcularTotal(){
@@ -30,10 +35,4 @@ function calcularTotal(){
     }else{
         result.innerHTML = total_geral ;
     }
-}
-
-function limparComanda(){
-    document.querySelector('input').value = '0';
-    document.getElementById('quant2').value = '0';
-    
 }
