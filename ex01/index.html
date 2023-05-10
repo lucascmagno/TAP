@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas</title>
+    <style>
+        body{
+            color: #585858;
+        } 
+
+        h2, h3{
+            text-align: center;
+        }
+
+        #container{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        #result{
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input, label{
+            width: 150px;
+        }
+
+        div.content{
+            padding-top: 0;
+            border: 1px solid #ddd;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 736px){
+            #container{
+                flex-direction: column;
+            }
+            .content{
+                align-items: center;
+            }
+            input, label{
+                width: 100%;
+                height: 30px;
+            }
+            button{
+                width: 100%;
+                height: 50px;
+            }
+            #result{
+                margin-bottom: 200px;
+            }
+        }
+    </style>
+    
+    <script>
+        function circulo(){
+            var pi = parseFloat(document.getElementById("ipi").value);
+            var raio = parseFloat(document.getElementById("iraio").value);
+            var result = document.getElementById("content_result");
+            
+            var area_circulo = pi * (raio**2);
+
+            result.innerHTML = area_circulo; 
+        }
+
+        function quadrado(){
+            var lado = parseFloat(document.getElementById("ilado").value);
+            var result = document.getElementById("content_result");
+
+            var area_quadrado = lado**2;
+
+            result.innerHTML = area_quadrado;
+        }
+
+        function triangulo(){
+            var base = parseFloat(document.getElementById("ibaset").value);
+            var altura = parseFloat(document.getElementById("ialturat").value);
+            var result = document.getElementById("content_result");
+
+            var area_triangulo = (base*altura)/2;
+
+            result.innerHTML = area_triangulo;
+        }
+
+        function retangulo (){
+            var base = parseFloat(document.getElementById("ibaser").value);
+            var altura = parseFloat(document.getElementById("ialturar").value);
+            var result = document.getElementById("content_result");
+
+            var area_retangulo = base*altura;
+
+            result.innerHTML = area_retangulo;
+        }
+
+        function trapezio (){
+            var base_maior = parseFloat(document.getElementById("ibase_maior").value);
+            var base_menor = parseFloat(document.getElementById("ibase_menor").value);
+            var altura = parseFloat(document.getElementById("ialtura_trapezio").value);
+            var result = document.getElementById("content_result");
+
+            var area_trapezio = ((base_maior+base_menor)*altura)/2;
+
+            result.innerHTML = area_trapezio;
+        }
+    </script>
+</head>
+<body>
+    <h2>Figuras Geometricas</h2>
+    <h3>Calculadora</h3>
+    <div id="container">
+        <div class="content circulo">
+            <h3>Área do Ciculo</h3>
+            <label for="ipi">pi: </label>
+            <input type="number" value="3.14" name="pi" id="ipi">
+
+            <label for="iraio">Raio: </label>
+            <input type="number" name="raio" id="iraio">
+            <button onclick="circulo()">Calcular</button>
+        </div>
+
+        <div class="content quadrado">
+            <h3>Área do Quadrado</h3>
+            <label for="ilado">Lado: </label>
+            <input type="number" name="lado" id="ilado">
+            <button onclick="quadrado()">Calcular</button>
+        </div>
+
+        <div class="content triangulo">
+            <h3>Área do Triangulo</h3>
+            <label for="ibaset">Base: </label>
+            <input type="number" name="baset" id="ibaset">
+
+            <label for="ialturat">Altura: </label>
+            <input type="number" name="alturat" id="ialturat">
+            <button onclick="triangulo()">Calcular</button>
+        </div>
+
+        <div class="content retangulo">
+            <h3>Área do Retângulo</h3>
+            <label for="ibaser">Base: </label>
+            <input type="number" name="baser" id="ibaser">
+
+            <label for="ialturar">Base: </label>
+            <input type="number" name="baser" id="ialturar">
+            <button onclick="retangulo()">Calcular</button>
+        </div>
+
+        <div class="content trapezio">
+            <h3>Área do Trapézio</h3>
+            <label for="ibase_maior">Base maior: </label>
+            <input type="number" name="basemaior" id="ibase_maior">
+
+            <label for="ibase_menor">Base menor</label>
+            <input type="number" name="basemenor" id="ibase_menor">
+
+            <label for="ialtura_trapezio">Altura: </label>
+            <input type="number" name="alturatrapezio" id="ialtura_trapezio">
+            <button onclick="trapezio()">Calcular</button>
+        </div>
+    </div>
+    <div id="result">
+        Resultado: <b id="content_result"></b>
+    </div>
+</body>
+</html>

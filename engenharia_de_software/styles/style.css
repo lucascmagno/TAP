@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    color: #1d1d1d;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --cinza: #F8F8F8;
+    --azul-borda: #0D99FF;
+    --section03: #E6F4FF;
+}
+
+header.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+    width: calc(100% -70px);
+    height: 40px;
+    background-color: var(--cinza);
+    padding: 20px;
+    border-bottom: 1px solid var(--azul-borda);
+    position: fixed;
+    z-index: 1;
+}
+
+.header-profissao{
+    font-size: 20px;
+}
+
+.logo_github{
+    width: 50px;
+    padding-right: 10px;
+}
+
+.p_texto{
+    font-size: 23px;
+    height: 50%;
+}
+
+hr{
+    margin: 30px;
+    color: #ddd;
+}
+
+ul.ul-list-links{
+    display: flex;
+    width: 40%;
+    gap: 20px;
+    list-style-type: none;
+    position: sticky;
+}
+
+ul.ul-list-links > li > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--azul-borda);
+}
+
+ul.ul-list-links > li > a:hover{
+    color: #047cd1;
+}
+
+/*section geral*/
+section.section-container{
+    height: calc(100vh - 80px);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.topicos{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.p_topicos{
+    width: 100%;
+    font-size:27px;
+}
+
+/*section 1*/
+section#section_1{
+    background-color: var(--cinza);
+    background-image: url("../images/fundo_inicio800.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/*Container principal*/
+#container_content{
+    position: relative;
+    height: 600px;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 20px ;
+    gap: 20px;
+    margin-bottom: 100px;
+    padding-top: 90px;
+}
+
+.titulo_principal{
+    padding-top: 90px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/*div content das paginas*/
+div.content{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    border: 1px solid #ddd;
+}
+
+div.content:hover{
+    border: 1px solid var(--azul-borda);
+}
+div.content img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    border: 1px solid #ddd;
+    border-bottom: none;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
