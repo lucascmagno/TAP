@@ -25,7 +25,7 @@
                         <td>1</td>
                         <td>
                             <select name="comida">
-                                <option value="-">-</option>
+                                <option value="-" class="select">-</option>
                                 <optgroup label="Salgados">
                                     <option value="Cachorro quente">Cachorro quente</option>
                                     <option value="X-Tudo">X-tudo</option>
@@ -43,10 +43,10 @@
                             </select>
                         </td>
                         <td>
-                            <input class="quant" type="number" min="0" value="0" name="quant" id="quant1" onblur="subtotal()">
+                            <input class="quant" type="number" min="0" value="0" name="quant" id="quant1" onclick="subtotal1()">
                         </td>
                         <td>
-                            <input type="number" step="0.01" min="0" value="0" name="preco" id="preco1">
+                            <input type="number" step="0.01" onFocus="subtotal1()" min="0" value="0" name="preco" id="preco1">
                         </td>
                         <td>
                             <input type="number" min="0" value="0" name="subtotal" id="subtotal1" disabled>
@@ -56,7 +56,7 @@
                         <td>2</td>
                         <td>
                             <select name="comida">
-                                <option value="-">-</option>
+                                <option value="-" class="select">-</option>
                                 <optgroup label="Salgados">
                                     <option value="Cachorro quente">Cachorro quente</option>
                                     <option value="X-Tudo">X-tudo</option>
@@ -87,7 +87,7 @@
                         <td>3</td>
                         <td>
                             <select name="comida">
-                                <option value="-">-</option>
+                                <option value="-" class="select">-</option>
                                 <optgroup label="Salgados">
                                     <option value="Cachorro quente">Cachorro quente</option>
                                     <option value="X-Tudo">X-tudo</option>
@@ -118,7 +118,7 @@
                         <td>4</td>
                         <td>
                             <select name="comida">
-                                <option value="-">-</option>
+                                <option value="-" class="select">-</option>
                                 <optgroup label="Salgados">
                                     <option value="Cachorro quente">Cachorro quente</option>
                                     <option value="X-Tudo">X-tudo</option>
@@ -149,7 +149,7 @@
                         <td>5</td>
                         <td>
                             <select name="comida">
-                                <option value="-">-</option>
+                                <option value="-" class="select">-</option>
                                 <optgroup label="Salgados">
                                     <option value="Cachorro quente">Cachorro quente</option>
                                     <option value="X-Tudo">X-tudo</option>
