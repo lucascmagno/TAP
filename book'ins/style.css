@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root{
+    --gradiente-cor1: #0E649A;
+    --gradiente-cor2: #63B3E7;
+    --azul: #96CFE5;
+    --input-white: #F0FAF5;
+    --input-azul: #71AED6;
+}
+*{
+    border: 1px solid;
+}
+section#sectionIndex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+div.entrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+div.cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+form.formCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
