@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+:root{
+    --gradiente-cor1: #0E649A;
+    --gradiente-cor2: #63B3E7;
+    --azul: #96CFE5;
+    --input-white: #F0FAF5;
+    --input-azul: #71AED6;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Section*/
+section#sectionIndex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #FFFFFF;
+}
+
+/*Entrar*/
+div.entrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 3%;
+    background: linear-gradient(180deg, var(--gradiente-cor1) 0%, var(--gradiente-cor2) 100%);
+}
+a.link-entrar{
+    font-size: 1em;
+    width: 100px;
+    border: 1px solid #ffffff;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+a.link-entrar:hover{
+    background-color: #ffffff;
+    color: var(--azul);
+}
+
+p.bookins{
+    font-size: 5em;
+    font-weight: bolder;
+}
+
+h1.h1_entrar{
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+/*Cadastrar*/
+div.cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: var(--azul);
+}
+
+form.formCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form.formCadastro .input{
+    text-indent: 40px;
+    background-color: var(--input-white);
+}
+
+input.submit{
+    background-color: var(--input-azul);
+    color: #FFFFFF;
+}
+input.submit:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: var(--azul);
+}
+
+input.submit, .input{
+    font-size: 1em;
+    border-radius: 30px;
+    width: 250px;
+    height: 45px;
+    border: none;
+}
+h1.h1_cadastro{
+    font-weight: normal;
+    font-size: 2.5em;
+}
+.ajuda{
+    width: 100%;
+}
+.ajuda p{
+    text-align: end;
+}
+.ajuda p:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 763px){
+    section#sectionIndex{
+        flex-direction: column;
+    }
+    div.entrar{
+        width: 100%;
+    }
+    div.cadastrar{
+        width: 100%;
+    }
+}
