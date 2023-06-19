@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+:root{
+    --gradient1: #0E649A;
+    --gradient2: #63B3E7;
+    --body-section: #DFF6FF;
+    --font-color1: #FFFFFF;
+    --font-color2: #000000;
+    --nav-background: #027AC7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--body-section);
+}
+/*header*/
+header{
+    background: linear-gradient(179.11deg, var(--gradient1) 0.76%, var(--gradient2) 80.2%);
+    color: var(--font-color1);
+    width: 100vw;
+}
+.top-header{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+}
+
+.logo{
+    display: flex;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.user{
+    display: flex;
+    width: 20%;
+    display: flex;
+}
+
+.img{
+    border: 1px solid #FFFFFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.lista{
+    display: flex;
+    width: 20%;
+}
+
+.pesquisa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-pesquisa{
+    width: 60%;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    background-color: none;
+}
+
+.input-pesquisa2{
+    display: none;
+}
+
+nav{
+    background-color: var(--nav-background);
+}
+
+.ul-navbar{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+}
+
+.link1, .link2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link1{
+    width: 70%;
+}
+
+.link2{
+    width: 30%;
+}
+
+.ul-navbar li{
+    padding: 10px;
+}
+
+.ul-navbar li a{
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
+/*Section*/
+section{
+}
+
+/*Section Content*/
+.destaque{
+
+}
+
+/*livros*/
+.livros{
+
+}
+.container{
+
+}
+.content{
+
+}
+
+@media screen and (max-width: 778px){
+    .top-header{
+        width: 90%;
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .user, .lista{
+        width: 100%;
+        display: flex;
+        padding-left: 30px;
+    }
+    
+    .user{
+        
+    }
+    .img{
+        border: 1px solid #FFFFFF;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    hr{
+        display: none;
+    }
+    .ul-navbar li{
+        font-size: 12px;
+        padding: 0;
+    }
+    .link1{
+        width: auto;
+    }
+    .link2{
+        width: auto;
+    }
+    .input-pesquisa{
+        width: 40%;
+    }
+    .input-pesquisa1{
+        display: none;
+    }
+    .input-pesquisa2{
+        display: block;
+    }
+}
