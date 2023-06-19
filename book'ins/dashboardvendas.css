@@ -3,10 +3,14 @@
 :root{
     --gradient1: #0E649A;
     --gradient2: #63B3E7;
+    --gradient3: #A90AE0;
+    --gradient4: #0F0AE0;
     --body-section: #DFF6FF;
     --font-color1: #FFFFFF;
     --font-color2: #000000;
     --nav-background: #027AC7;
+    --desconto-btn: #027AC7;
+    --font-desconto: #0E649A;
 }
 *{
     margin: 0;
@@ -17,9 +21,15 @@ body{
 }
 /*header*/
 header{
-    background: linear-gradient(179.11deg, var(--gradient1) 0.76%, var(--gradient2) 80.2%);
     color: var(--font-color1);
     width: 100vw;
+    background: #333;
+    position: static;
+}
+menu{
+    background: linear-gradient(179.11deg, var(--gradient1) 0.76%, var(--gradient2) 80.2%);
+    position: fixed;
+    width: 100%;
 }
 .top-header{
     display: flex;
@@ -59,7 +69,7 @@ header{
     flex-direction: column;
 }
 .input-pesquisa{
-    width: 60%;
+    width: 400px;
     height: 40px;
     margin: 10px 0;
     border-radius: 30px;
@@ -109,11 +119,29 @@ nav{
 
 /*Section*/
 section{
+    padding-top: 200px;
 }
 
 /*Section Content*/
 .destaque{
+    width: 70vw;
+    height: 20vh;
+    margin: auto;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-image: linear-gradient(180deg, var(--gradient3) 0%, var(--gradient4) 100%);
+    color: #FFFFFF;
+}
+.h1-destaque{
+    font-weight: bold;
+}
+.h2-destaque{
+    font-weight: normal;
 }
 
 /*livros*/
@@ -121,9 +149,39 @@ section{
 
 }
 .container{
-
+    margin-top: 20px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.inf-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.desconto-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--desconto-btn);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.titulo-card{
+    color: var(--font-desconto);
+}
+.preco-card{
 
 }
 
@@ -175,5 +233,13 @@ section{
     }
     .input-pesquisa2{
         display: block;
+    }
+
+    /*Destaque*/
+    .h1-destaque{
+        font-size: 0.9em;
+    }
+    .h2-destaque{
+        font-size: 0.8em;
     }
 }
