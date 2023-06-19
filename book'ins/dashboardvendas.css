@@ -216,11 +216,16 @@ section{
         display: none;
     }
     .ul-navbar li{
-        font-size: 12px;
+        font-size: 1.3em;
         padding: 0;
     }
     .link1{
         width: auto;
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0;
     }
     .link2{
         width: auto;
@@ -234,7 +239,9 @@ section{
     .input-pesquisa2{
         display: block;
     }
-
+    section{
+        padding-top: 300px;
+    }
     /*Destaque*/
     .h1-destaque{
         font-size: 0.9em;
