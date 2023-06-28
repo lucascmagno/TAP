@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastrarFilme.css">
+</head>
+<body>
+    <h1>Editar Filme</h1>
+    <div class="hr"></div>
+    <div class="div-form">
+        <form action="#" method="post">
+            <label for="ititulo">Título</label>
+            <input class="input" type="text" id="ititulo" name="titulo">
+            <label for="idescricao">Descrição</label>
+            <textarea name="descricao" id="idescricao" cols="30" rows="10"></textarea>
+            <div class="dateTime">
+                <div class="time">
+                    <label for="iduracao">Duração</label>
+                    <input type="time" name="duracao" id="iduracao">
+                </div>
+                <div class="date">
+                    <label for="idataLancamento">Data de Lançamento</label>
+                    <input type="date" name="data" id="idataLancamento">
+                </div>
+            </div>
+            <label for="icategoria">Categoria</label>
+            <select class="input" name="categoria" id="icategoria">
+                <option value=""></option>
+                <option value="teste">Teste</option>
+            </select>
+            <input class="submit" type="submit" value="Editar">
+        </form>
+    </div>
+</body>
+</html>
