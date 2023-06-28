@@ -6,6 +6,7 @@
     --font:#77FFC0;
     --font2:#201B2C;
     --input:#6F9E88; 
+    --voltar: #46396459;
 }
 *{
     margin: 0;
@@ -21,6 +22,15 @@ h1{
 }
 .hr{
     border: 2px solid #77FFC0;
+}
+
+.voltar{
+    background-color: var(--voltar);
+    padding: 15px 90px;
+    border-radius: 10px;
+}
+.voltar:hover{
+    background-color: var(--input);
 }
 
 .div-form{
@@ -54,7 +64,7 @@ input,textarea,select{
     border-radius: 30px;
 }
 .input, textarea{
-    text-indent: 20px;
+    text-indent: 00;
     font-size: 1.4em;
 }
 textarea{
@@ -70,7 +80,7 @@ textarea{
     color: var(--font2);
     font-weight: bold;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 00;
 }
 .submit:hover{
     cursor: pointer;
@@ -90,5 +100,5 @@ textarea{
 .time > input, .date > input{
     height: 50px;
     width: 140px;
-    border-radius: 20px;
+    border-radius: 00;
 }
