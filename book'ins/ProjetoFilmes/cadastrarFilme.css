@@ -47,18 +47,33 @@ form{
 label{
     font-size: 1.5em;
 }
-.input .select{
+
+input,textarea,select{
+    background-color: #6F9E88;
+}
+
+.input{
     height: 50px;
+    border-radius: 30px;
+}
+.input, textarea{
+    text-indent: 20px;
+    font-size: 1.4em;
+}
+textarea{
+    padding-top: 10px;
     border-radius: 30px;
 }
 .submit{
     height: 50px;
-    width: 150px;
+    width: 200px;
     background-color: var(--submit);
     border: none;
     border-radius: 30px;
-    margin-top: 20px;
     color: var(--font2);
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
 }
 .submit:hover{
     cursor: pointer;
@@ -69,6 +84,14 @@ label{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 30px;
+}
+.time{
+    width: 60%;
+}
+.time > input, .date > input{
+    height: 50px;
+    width: 140px;
+    border-radius: 20px;
 }
