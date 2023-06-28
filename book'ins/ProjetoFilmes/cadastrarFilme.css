@@ -14,9 +14,6 @@ body{
     background-color: var(--body);
     height: 100vh;
 }
-html{
-
-}
 
 h1{
     color: var(--font);
